@@ -7,22 +7,45 @@ html_code = """
 <html>
 <head>
     <title>Happy Birthday Justine ❤️</title>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
     <script>
         window.onload = function() {
-            alert("🎉👩‍🦰💖 Happy 26th Birthday Justine! 💖🎂✨\\n\\n"
-            + "Wish you a very happy birthday, my love! ❤️\\n\\n"
-            + "You are the person I will never forget in my life.\\n"
-            + "Without you, there is no happiness in my life. 💕\\n\\n"
-            + "I always wish for your success and healthy life. 🌸\\n"
-            + "Always take care of yourself and keep smiling 😊\\n\\n"
-            + "I Love You So Much ❤️🎉");
+
+            // Confetti effect
+            confetti({
+                particleCount: 200,
+                spread: 100,
+                origin: { y: 0.6 }
+            });
+
+            alert("🎉💖 Happy 26th Birthday Justine! 🎂✨\\n\\n"
+                + "Wish you a very happy birthday my love! 💕\\n\\n"
+                + "You are the person I will never forget in my life.\\n\\n"
+                + "I always wish for your happiness and success.\\n\\n"
+                + "I Love You So Much ❤️");
         }
     </script>
 </head>
-<body style="text-align:center; background-color:pink; padding-top:100px; font-family:Arial;">
-    <h1>🎀 Happy 26th Birthday Justine 🎀</h1>
-    <h2>💖 You are my happiness 💖</h2>
-    <p>From Bhupesh ❤️</p>
+
+<body style="text-align:center; background:linear-gradient(to right, #ff9a9e, #fad0c4); padding-top:60px; font-family:Arial;">
+
+    <h1>🎂 Happy 26th Birthday Justine 💕</h1>
+
+    <h2>You are my happiness ❤️</h2>
+
+    <!-- Cake Image -->
+    <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125"
+         alt="Birthday Cake"
+         width="300"
+         style="border-radius:20px; box-shadow:0 10px 20px rgba(0,0,0,0.3); margin-top:20px;">
+
+    <p style="margin-top:20px; font-size:18px;">
+        From Bhupesh ❤️
+    </p>
+
 </body>
 </html>
 """
